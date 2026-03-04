@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Rebecca Decker</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="images/logo.jpg" alt="logo"> Rebecca Decker</a>
+
+  <!-- Hamburger toggle -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <!-- Nav links -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- PROJECTS SECTION -->
+  <main class="projects">
+    <h1>My Projects</h1>
+    <p class="projects-intro">
+      A selection of projects that showcase my skills in full stack web development,
+      interactivity, accessibility, and responsive design.
+    </p>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="images/macon-county-redesign.jpg" alt="Screenshot of Project One">
+        <h2>Macon County Website Redesign</h2>
+        <p>Demonstrates responsive layout and JavaScript interactivity.</p>
+        <button class="project-link" data-url="https://wcet.waketech.edu/rndecker/web210/macon-county-redesign/index.html">
+          Live Preview
+        </button>
+      </div>
+
+      <div class="project-card">
+        <img src="images/lifted-website.jpg" alt="Screenshot of Project Two">
+        <h2>Lifted WordPress Website</h2>
+        <p>Focuses on clean UI design and accessibility best practices.</p>
+        <button class="project-link" data-url="https://wcet.waketech.edu/rndecker/WEB260/wordpress/
+">
+          Live Preview
+        </button>
+      </div>
+
+      <div class="project-card">
+        <img src="images/sprout-and-grow.jpg" alt="Screenshot of Project Three">
+        <h2>Sprout and Grow Website</h2>
+        <p>Highlights backend logic and database integration.</p>
+        <button class="project-link" data-url="https://wcet.waketech.edu/rndecker/web140/project/index.html">
+          Live Preview
+        </button>
+      </div>
+
+      <div class="project-card">
+        <img src="images/event-website.jpg" alt="Screenshot of Project Four">
+        <h2>Hike For Cancer Event Signup Website</h2>
+        <p>Showcases advanced CSS styling and animations.</p>
+        <button class="project-link" data-url="https://wcet.waketech.edu/rndecker/project/index.html">
+          Live Preview
+        </button>
+      </div>
+
+      <div class="project-card">
+        <img src="images/weather-app.jpg" alt="Screenshot of Project Five">
+        <h2>Weather Forecast Application</h2>
+        <p>Represents growth and problem-solving across the stack.</p>
+        <button class="project-link" data-url="https://rndecker1826.github.io/weatherapp/#/">
+          Live Preview
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- PROJECT MODAL -->
+  <div id="project-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close project preview">✕</button>
+
+      <iframe
+        id="project-frame"
+        title="Live project preview"
+        loading="lazy">
+      </iframe>
+
+      <p class="modal-fallback">
+        Live preview unavailable?
+        <a id="external-link" href="#" target="_blank">Open in a new tab</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+    <p>© 2026 Rebecca Decker</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

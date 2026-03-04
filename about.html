@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Rebecca Decker</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="images/logo.jpg" alt="logo"> Rebecca Decker
+  </a>
+
+  <!-- Hamburger toggle -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="about">
+
+  <section class="about-wrapper">
+
+    <!-- LEFT: PROFILE IMAGE -->
+    <div class="about-image">
+      <img id="profile-img" src="images/profile.jpg" alt="Rebecca Decker professional photo">
+    </div>
+
+    <!-- RIGHT: TEXT CONTENT -->
+    <div class="about-content">
+
+      <p class="branding">
+        <h1>Personal Branding Statement:</h1>
+        <p>
+          I am a detail-oriented full stack web developer student. I pride myself on my precision, adaptability, open-mindedness, and reliability. My passion is creating websites that foster accessibility, responsiveness, creative designs, interactivity, and are user-friendly via HTML, CSS, JavaScript, PHP, C++, Python, MySQL, and more. My goal is to bring my future clients’ dreams to life through coding.
+        </p>
+
+      <h2>About Me</h2>
+      <p>
+        I am a Junior Full Stack Developer currently completing my Associate in Applied Science in Web Development 
+        at Wake Technical Community College, with an anticipated graduation date of May 2026.
+      </p>
+      <p>
+        I specialize in building responsive, accessible web applications using HTML, CSS, JavaScript, Python, C#, and MySQL. 
+        I enjoy developing full stack solutions that combine clean user interfaces with structured backend logic.
+      </p>
+
+      <h2>Technical Strengths</h2>
+      <div class="skills-container">
+        <div class="skill-card">Responsive & mobile-first design</div>
+        <div class="skill-card">REST API integration & CRUD operations</div>
+        <div class="skill-card">Database design & relational modeling</div>
+        <div class="skill-card">Accessibility & cross-browser support</div>
+        <div class="skill-card">Version control using Git & GitHub</div>
+      </div>
+
+      <h2>Professional Background</h2>
+      <p>
+        With over six years of experience in healthcare and pharmacy services, I bring strong analytical thinking, 
+        compliance awareness, and system testing experience.
+      </p>
+
+      <!-- FUN FACT INTERACTION -->
+      <div class="fun-fact-wrapper">
+        <button id="reveal-fact">Click to Reveal a Fun Fact 🎉</button>
+        <p id="fun-fact">I enjoy exploring local coffee shops and hiking the mountains!☕</p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  <a href="https://github.com" target="_blank">GitHub</a>
+  <p>© 2026 Rebecca Decker</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
