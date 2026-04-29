@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resume | Rebecca Decker</title>
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+
+  <!-- SUN (light mode) -->
+  <svg class="icon sun" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="5"/>
+    <g stroke-width="2">
+      <line x1="12" y1="1" x2="12" y2="4"/>
+      <line x1="12" y1="20" x2="12" y2="23"/>
+      <line x1="1" y1="12" x2="4" y2="12"/>
+      <line x1="20" y1="12" x2="23" y2="12"/>
+    </g>
+  </svg>
+
+  <!-- MOON (dark mode) -->
+  <svg class="icon moon" viewBox="0 0 24 24">
+    <path d="M21 14.5A8.5 8.5 0 1111.5 3a6.5 6.5 0 009.5 11.5z"/>
+  </svg>
+
+</button>
+
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="images/logo.jpg" alt="Rebecca Decker Logo">
+    <span>Rebecca Decker</span>
+  </a>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a class="active" href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="fade-in">
+  <h1>Resume</h1>
+
+  <iframe src="resume/rdecker_resume.pdf" width="100%" height="600"></iframe>
+
+  <a class="btn-primary" href="resume/rdecker_resume.pdf" download>Download Resume</a>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Rebecca Decker</p>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

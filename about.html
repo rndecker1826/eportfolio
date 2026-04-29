@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Rebecca Decker</title>
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+
+  <!-- SUN (light mode) -->
+  <svg class="icon sun" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="5"/>
+    <g stroke-width="2">
+      <line x1="12" y1="1" x2="12" y2="4"/>
+      <line x1="12" y1="20" x2="12" y2="23"/>
+      <line x1="1" y1="12" x2="4" y2="12"/>
+      <line x1="20" y1="12" x2="23" y2="12"/>
+    </g>
+  </svg>
+
+  <!-- MOON (dark mode) -->
+  <svg class="icon moon" viewBox="0 0 24 24">
+    <path d="M21 14.5A8.5 8.5 0 1111.5 3a6.5 6.5 0 009.5 11.5z"/>
+  </svg>
+
+</button>
+
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="images/logo.jpg" alt="Rebecca Decker Logo">
+    <span>Rebecca Decker</span>
+  </a>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<main class="section fade-in">
+
+<section class="about-modern">
+
+  <!-- PROFILE CARD -->
+  <div class="about-card profile-card">
+    <img src="images/about.jpg" alt="Rebecca Decker profile photo" class="profile-img">
+
+    <div>
+      <h1>About Me</h1>
+      <h2>Hi, I'm Rebecca Decker</h2>
+
+      <p>
+        I am a passionate front-end web developer focused on creating interactive, accessible, and responsive web experiences.
+        I enjoy building clean and functional interfaces that solve real user problems.
+      </p>
+
+      <p>
+        My goal is to grow as a full stack developer while building meaningful, user-centered digital experiences.
+      </p>
+    </div>
+  </div>
+
+  <!-- SKILLS CARD -->
+<div class="about-card highlight">
+    <h3>Skills & Technologies</h3>
+
+    <div class="skills-grid-modern">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>Python</span>
+    </div>
+  </div>
+
+  <!-- LIFESTYLE CARD -->
+<div class="about-card highlight">
+    <h3>Outside of Coding</h3>
+
+    <p>I enjoy staying active, exploring, and learning new things that keep me inspired:</p>
+
+    <ul class="about-list-modern">
+      <li> Holiday Baking (Family Pizzelle Recipe)</li>
+      <li> Hiking and exploring nature trails</li>
+      <li> Strength training and fitness</li>
+      <li> Coffee shops, restaurants & exploring new towns</li>
+      <li> Watching documentaries</li>
+      <li> Spending time with loved ones</li>
+    </ul>
+  </div>
+
+<div class="about-card highlight">
+  <h3>Career Interests</h3>
+  <p>
+    I am interested in pursuing a career in web development, particularly in
+    industries such as healthcare and clinical research where usability,
+    accessibility, and data accuracy are essential.
+  </p>
+
+  <p>
+    While I have not yet built healthcare-specific applications, my academic
+    projects have focused on developing responsive, user-friendly interfaces,
+    working with structured data, and improving accessibility across web
+    experiences.
+  </p>
+
+  <h4 style="margin-top:1rem; color:#8E24AA;">Transferable Skills</h4>
+
+  <ul class="about-list-modern">
+    <li><strong>Responsive Design:</strong> Building layouts that adapt across devices and user environments.</li>
+    <li><strong>Form Development:</strong> Creating structured input systems similar to patient or data intake forms.</li>
+    <li><strong>API Integration:</strong> Working with external data sources (e.g., weather API) to display dynamic content.</li>
+    <li><strong>Accessibility Awareness:</strong> Designing with readability and usability in mind for diverse users.</li>
+    <li><strong>Problem Solving:</strong> Translating user needs into functional, interactive web interfaces.</li>
+  </ul>
+
+  <p style="margin-top:1rem;">
+    My goal is to continue developing these skills so I can contribute to
+    meaningful, real-world applications in healthcare or other data-driven
+    environments.
+  </p>
+</div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Rebecca Decker</p>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

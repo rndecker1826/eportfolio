@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projects | Rebecca Decker</title>
+
+  <meta name="description" content="Portfolio projects by Rebecca Decker showcasing web development, JavaScript, responsive design, and interactive applications.">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+
+  <!-- SUN (light mode) -->
+  <svg class="icon sun" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="5"/>
+    <g stroke-width="2">
+      <line x1="12" y1="1" x2="12" y2="4"/>
+      <line x1="12" y1="20" x2="12" y2="23"/>
+      <line x1="1" y1="12" x2="4" y2="12"/>
+      <line x1="20" y1="12" x2="23" y2="12"/>
+    </g>
+  </svg>
+
+  <!-- MOON (dark mode) -->
+  <svg class="icon moon" viewBox="0 0 24 24">
+    <path d="M21 14.5A8.5 8.5 0 1111.5 3a6.5 6.5 0 009.5 11.5z"/>
+  </svg>
+
+</button>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="images/logo.jpg" alt="Rebecca Decker Logo">
+    <span>Rebecca Decker</span>
+  </a>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </label>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= PROJECTS ================= -->
+<main class="projects">
+
+  <h1 class="reveal">My Projects</h1>
+
+  <p class="projects-intro reveal">
+    A selection of projects that showcase my skills in full stack web development,
+    interactivity, accessibility, and responsive design.
+  </p>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card reveal">
+      <img src="images/macon-county-redesign.jpg" alt="Macon County Website Redesign">
+
+      <h2>Macon County Website Redesign</h2>
+      <p>Responsive layout, accessibility improvements, and navigation redesign.</p>
+
+      <div class="tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Responsive</span>
+      </div>
+
+      <button class="project-link"
+        data-url="https://wcet.waketech.edu/rndecker/web210/macon-county-redesign/index.html">
+        Live Preview
+      </button>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card reveal">
+      <img src="images/lifted-website.jpg" alt="Lifted WordPress Website">
+
+      <h2>Lifted WordPress Website</h2>
+      <p>CMS customization, theme editing, and content structure.</p>
+
+      <div class="tags">
+        <span>WordPress</span>
+        <span>CMS</span>
+      </div>
+
+      <button class="project-link"
+        data-url="https://wcet.waketech.edu/rndecker/WEB260/wordpress/"
+        data-fallback="images/lifted-website.jpg">
+        Live Preview
+      </button>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card reveal">
+      <img src="images/sprout-and-grow.jpg" alt="Sprout and Grow Website">
+
+      <h2>Sprout and Grow Website</h2>
+      <p>Form design, usability, and structured user input systems.</p>
+
+      <div class="tags">
+        <span>Forms</span>
+        <span>UX</span>
+      </div>
+
+      <button class="project-link"
+        data-url="https://wcet.waketech.edu/rndecker/web140/project/index.html">
+        Live Preview
+      </button>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card reveal">
+      <img src="images/event-website.jpg" alt="Event Signup Website">
+
+      <h2>Hike For Cancer Event Signup</h2>
+      <p>Interactive form system with user confirmation workflow.</p>
+
+      <div class="tags">
+        <span>Forms</span>
+        <span>JavaScript</span>
+      </div>
+
+      <button class="project-link"
+        data-url="https://wcet.waketech.edu/rndecker/project/index.html">
+        Live Preview
+      </button>
+    </div>
+
+    <!-- PROJECT 5 -->
+    <div class="project-card reveal">
+      <img src="images/weather-app.jpg" alt="Weather App">
+
+      <h2>Weather Forecast Application</h2>
+      <p>API integration and dynamic data rendering using JavaScript.</p>
+
+      <div class="tags">
+        <span>JavaScript</span>
+        <span>API</span>
+        <span>Data</span>
+      </div>
+
+      <button class="project-link"
+        data-url="https://rndecker1826.github.io/weatherapp/#/">
+        Live Preview
+      </button>
+    </div>
+
+  </div>
+</main>
+
+<div id="project-modal" class="modal hidden" aria-hidden="true">
+  <div class="modal-content">
+
+    <div class="modal-header">
+      <button class="close-modal" aria-label="Close preview">✕</button>
+      <a id="external-link" href="#" target="_blank" class="open-new-tab">
+        Open in new tab ↗
+      </a>
+    </div>
+
+    <iframe
+      id="project-frame"
+      title="Live project preview"
+      loading="lazy">
+    </iframe>
+
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+  <p>© 2026 Rebecca Decker</p>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

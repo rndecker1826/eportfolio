@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rebecca Decker | Portfolio</title>
+
+<meta name="description" content="Full stack web developer portfolio of Rebecca Decker">
+<meta name="author" content="Rebecca Decker">
+
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+
+  <!-- SUN (light mode) -->
+  <svg class="icon sun" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="5"/>
+    <g stroke-width="2">
+      <line x1="12" y1="1" x2="12" y2="4"/>
+      <line x1="12" y1="20" x2="12" y2="23"/>
+      <line x1="1" y1="12" x2="4" y2="12"/>
+      <line x1="20" y1="12" x2="23" y2="12"/>
+    </g>
+  </svg>
+
+  <!-- MOON (dark mode) -->
+  <svg class="icon moon" viewBox="0 0 24 24">
+    <path d="M21 14.5A8.5 8.5 0 1111.5 3a6.5 6.5 0 009.5 11.5z"/>
+  </svg>
+
+</button>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+  <a href="index.html" class="logo">
+    <img src="images/logo.jpg" alt="Rebecca Decker Logo">
+    <span>Rebecca Decker</span>
+  </a>
+
+  <!-- NAV TOGGLE -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <!-- NAV -->
+  <nav>
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+<!-- HERO -->
+<section class="hero fade-in">
+
+  <div class="hero-text">
+
+    <h1>Hi, I'm Rebecca Decker</h1>
+
+    <p>
+      I’m a full stack web development student focused on building accessible,
+      responsive websites using HTML, CSS, JavaScript, and backend technologies.
+      I enjoy solving real-world problems through clean, functional design.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="images/profile.jpg" alt="Profile image of Rebecca Decker">
+  </div>
+</section>
+
+<section class="fade-in featured-work">
+
+  <h2>Featured Projects</h2>
+
+  <div class="project-list">
+
+    <div class="project-item">
+      <h3>Macon County Website Redesign</h3>
+      <p>Responsive redesign focused on usability, accessibility, and modern layout structure.</p>
+    </div>
+
+    <div class="project-item">
+      <h3>Weather Application</h3>
+      <p>JavaScript API project that displays real-time weather data with dynamic updates.</p>
+    </div>
+
+    <div class="project-item">
+      <h3>WordPress Website Build</h3>
+      <p>CMS-based project demonstrating theme customization and content management skills.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="fade-in hero-buttons-center">
+
+  <a class="btn-primary" href="projects.html">View All Projects</a>
+  <a class="btn-secondary" href="contact.html">Contact Me</a>
+
+</section>
+
+<!-- SKILLS -->
+<section class="fade-in">
+
+  <h2>Skills</h2>
+
+  <div class="grid">
+
+    <div class="card">HTML5</div>
+    <div class="card">CSS3 / Responsive Design</div>
+    <div class="card">JavaScript</div>
+    <div class="card">PHP & MySQL</div>
+
+  </div>
+
+</section>
+
+<section class="fade-in intro-block">
+
+  <h2>Career Focus</h2>
+
+  <p>
+    I am especially interested in applying web development within healthcare and
+    clinical research environments, where usability, clarity, and accessibility
+    are critical to supporting both professionals and patients.
+  </p>
+
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2026 Rebecca Decker</p>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
